@@ -25,9 +25,9 @@ public class Calculation {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Path("post")
-	public Response post(final Str e){
+	public Response post(final Str e) {
 		String result = calculate(e.getString());
-		return Response.status(201).entity(result).build();
+		return Response.status(201).entity("{\"str\" : \"" + result + "\"}").build();
 	}
 
 	private String calculate(String expression) {

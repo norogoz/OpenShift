@@ -8,6 +8,7 @@ public class Str {
 	@XmlElement private String str;
 
 	public Str() {
+		str = "";
 	}
 
 	public void setString(String new_str) {
