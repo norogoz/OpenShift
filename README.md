@@ -1,6 +1,6 @@
 App is ready to contain with S2I: https://github.com/openshift/source-to-image
 
-S2I is OpenShift tool used to derive docker images from app source code. It accesses pom.xml (or .war file) and user prepared scripts in order to build the app. Necessary scripts, additional dependencies and configurations can be collected in builder images and used to further simplify user effort.
+S2I is OpenShift tool used to derive docker images (or, alternatively, Dockerfiles) from app source code. It accesses pom.xml (or .war file) and user prepared scripts in order to build the app. Necessary scripts, additional dependencies and configurations can be collected in builder images and used to further simplify user effort. Therefore, there is no need to write Dockerfiles.
 
 Builder image I used for this repo comes from OpenShift S2I Community: https://github.com/openshift-s2i/s2i-wildfly  
 The image is called openshift/wildfly-160-centos7 and available on DockerHub.
