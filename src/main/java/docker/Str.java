@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Str {
 	@XmlElement
-	private String str;
-
+	private String str = "";
+/*
 	public Str() {
 		str = "";
 	}
-
+*/
 	public void setString(String new_str) {
 		str = new_str;
 	}
